@@ -13,8 +13,7 @@ public class Accounts extends Controller{
 	  public static void register(User user)
 	  {
 	    user.save();
-	    login();
-	    
+	    login();	    
 	  }
 
 	  public static void login()
