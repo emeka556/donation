@@ -13,6 +13,16 @@ GET    /logout                                  Accounts.logout
 POST   /authenticate                            Accounts.authenticate
 POST   /register                                Accounts.register
 
+# Donation page
+GET    /donation                                DonationController.index
+
+# Donation page
+GET    /donation                                DonationController.index
+POST   /donation/donate                         DonationController.donate
+GET    /donation/report                         DonationController.renderReport
+
+
+
 
 # Ignore favicon requests
 GET     /favicon.ico                            404
