@@ -34,7 +34,7 @@ public class Accounts extends Controller
     Welcome.index();
   }
 
-  /*public static void authenticate(String email, String password)
+  public static void authenticate(String email, String password)
   {
     Logger.info("Attempting to authenticate with " + email + ":" + password);
 
@@ -50,7 +50,7 @@ public class Accounts extends Controller
       Logger.info("Authentication failed");
       login();
     }
-  }*/
+  }
 
   public static User getCurrentUser()
   {
