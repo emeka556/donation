@@ -1,5 +1,8 @@
 package models;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import javax.persistence.CascadeType;
 import javax.persistence.OneToMany;
 //import javax.persistence.*;
@@ -21,14 +24,14 @@ import play.db.jpa.Model;
 @Entity
 
 public class User extends Model {
-	//EntityManager em;
+	
 	public boolean usCitizen;
 	public String firstName;
 	public String lastName;
 	 
 
-	// @OneToMany(mappedBy = "from" , cascade = CascadeType.ALL)
-	// List<Donation> donations = new ArrayList<Donation>();
+	 @OneToMany(mappedBy = "from" , cascade = CascadeType.ALL)
+	List<Donation> donations = new ArrayList<Donation>();
 	public String email;
 	public String password;
 
