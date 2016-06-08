@@ -31,29 +31,35 @@
           <div class="field">
             <div class="ui radio checkbox">
               <input id="paypal" name="methodDonated" value="paypal" checked="checked" type="radio"> 
-              <label for="paypal">PayPal</label>
+              <label for="paypal"><i class="paypal card large icon"></i>PayPal</label>
             </div>
           </div>
           <div class="field">
             <div class="ui radio checkbox">
               <input id="direct" name="methodDonated" value="direct" type="radio"> 
-              <label for="direct">Direct</label>
+              <label for="direct"><i class="visa large icon"></i>Direct</label>
             </div>
           </div>
         </div>
       </div>
     </div>
     <p>
-    <button class="ui blue submit button" class = Submit >Donate <i class="add icon"></i></button>
+    <button class="ui blue submit button" class = Submit >Donate  <i class="add icon"></i></button>
     </p>
     <div class="ui error message"></div>
   </form>
   <div class="ui segment">
-    <h4 class="ui header">Amount target achieved</h4>
-    <div class="ui successful progress">
-      <div class="bar" style="width:${progress}%"></div>
-      <!--"width:50%" "width:${progress}" -->
-    </div>
+    <h4 class="ui header">Amount target achieved </h4>
+    
+
+
+    
+   <div class="ui teal progress"  >
+  <div class="bar">
+    <div class="progress"></div>
   </div>
+ 
+</div>
+
  <script src="@{'/public/javascripts/donate.js'}"></script>
 </section>
