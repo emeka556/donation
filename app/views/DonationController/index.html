@@ -17,6 +17,7 @@
       
    
      <select name= "amountDonated">
+     <option value="0">Amount</option>
      <option value="100">$100</option>
      <option value="500">$500</option>
      <option value="1000">$1000</option>
@@ -43,14 +44,14 @@
       </div>
     </div>
     <p>
-    <div class="ui blue submit button">Donate <i class="add icon"></i></div>
+    <button class="ui blue submit button" class = Submit >Donate <i class="add icon"></i></button>
     </p>
     <div class="ui error message"></div>
   </form>
   <div class="ui segment">
     <h4 class="ui header">Amount target achieved</h4>
     <div class="ui successful progress">
-      <div class="bar" style="width:${progress}"></div>
+      <div class="bar" style="width:${progress}%"></div>
       <!--"width:50%" "width:${progress}" -->
     </div>
   </div>
