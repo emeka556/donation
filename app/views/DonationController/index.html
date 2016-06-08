@@ -14,20 +14,25 @@
   <form class="ui form" action="/donation/donate" method="POST">
     <div class="ui four column grid">
       <div class="column">
-        <div class="ui selection dropdown">
-          <input name="amountDonated" type="hidden">
-          <div class="default text">Amount</div>
-          <i class="dropdown icon"></i>
-          
-          <div class="dropdown menu">
-            <div class="item" data-value="100">$100</div>
-            <div class="item" data-value="500">$500</div>
-            <div class="item" data-value="1000">$1000</div>
-          </div>
-         
-        </div>
+      
+
+   
+
+
+        <div class="ui compact menu">
+        <input name="amountDonated" type= "hidden">
+  <div class="ui simple dropdown item"> Amount
+    <i class="dropdown icon"></i>
+    <div class="menu">
+      <div class="item" data-value= "100">$100</div>
+      <div class="item" data-value= "500">$500</div>
+      <div class="item" data-value= "1000">$1000</div>
+    </div>
+  </div>
+</div>
         
       </div>
+      
       <div class="column">
         <div class="grouped inline fields">
           <div class="field">
