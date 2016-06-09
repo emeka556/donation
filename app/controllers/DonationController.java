@@ -8,7 +8,7 @@ import models.Donation;
 import models.User;
 import play.Logger;
 import play.mvc.Controller;
-import utils.DonationDateComparator;
+
 
 public class DonationController extends Controller 
 {
@@ -97,8 +97,7 @@ public class DonationController extends Controller
 	public static void renderReport()
 	{
 	  List<Donation> donations = Donation.findAll();
-	  Collections.shuffle(donations);
-	  Collections.sort(donations, new DonationDateComparator());
+	  
 	  render(donations);
 	}
 }

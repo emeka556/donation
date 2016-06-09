@@ -13,8 +13,6 @@ GET    /logout                                  Accounts.logout
 POST   /authenticate                            Accounts.authenticate
 POST   /register                                Accounts.register
 
-# Donation page
-GET    /donation                                DonationController.index
 
 # Donation page
 GET    /donation                                DonationController.index
